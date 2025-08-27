@@ -1,7 +1,7 @@
 # Example Data
 Given our example image below, we'd like to zoom in on the tip of the image. In our processed object, this area spans (1000,1800)µM on the x-axis and (1000,1800)µM on the y-axis.
 
-![main](Image.jpg)
+<img src="[https://i.imgur.com/ZWnhY9T.png](https://github.com/katlande/MERFISH_Cropping/blob/main/test/Image.jpg)" width=50% height=50%>
 
 We run the following code:
 ```
