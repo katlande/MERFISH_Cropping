@@ -5,7 +5,7 @@ pathtoimage
 
 We run the following code:
 ```
-python crop_image.py -c test/test_conversion_matrix.csv -i test/test.jpg -l 1000 -r 1800 -b 1000 -t 1800 -o test/crop
+python crop_image.py -c test/test_conversion_matrix.csv -i test/Image.jpg -l 1000 -r 1800 -b 1000 -t 1800 -o test/CroppedImage
 ```
 
 We recieve the following crop:
