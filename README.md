@@ -40,3 +40,22 @@ Image transformations, all are FALSE by default and should only be relevant if t
 
 Output options:
 * -j: file extension of the output. Automatically set to 'jpg,' but other image formats can be set. jpg maintains image resolution and it is recommended not to mess with this setting.
+
+
+## Increasing Processing Speed
+While it is not necessary for the crop_image script to run, it will dramatically increase the cropping speed if the output mosaic files are converted into pyramidal images. A .tif can be converted to pyramidal format on commandline with vips:
+
+```
+vips tiffsave mosaic_DAPI_z3.tf mosaic_DAPI_z3_pyramidal.tif --tile --pyramid --compression jpeg --Q 100
+```
+
+
+
+
+
+
+
+
+
+
+
