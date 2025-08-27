@@ -9,4 +9,4 @@ python crop_image.py -c test/test_conversion_matrix.csv -i test/Image.jpg -l 100
 ```
 
 We recieve the following crop:
-<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/Image.jpg" alt="Main Image" width="400" height="400"> <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/CroppedImage.jpg" alt="Main Image" width="400" height="400">
+<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/CroppedImage.jpg" alt="Main Image" width="400" height="400">
