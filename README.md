@@ -1,5 +1,5 @@
 # MERFISH Cropping
-Full, high-resolution tissue images from MERFISH experiments can be many gb in size. Zooming in on specific areas of slides can be especially challenging, as Vizgen reports cell coordinates in µM rather than pixels. Furthermore, the conversion between microns and pixels in MERFISH data is not always straightforward, as the micron coordinate system may be offset from the 0,0 mark of the pixel coordinate system. To simply analysis, this repo allows users to crop large images from the command line using the micron-based coordiante system.
+Full, high-resolution tissue images from MERFISH experiments can be many gb in size. Zooming in on specific areas of slides can be especially challenging, as Vizgen reports cell coordinates in µM rather than pixels. Furthermore, the conversion between microns and pixels in MERFISH data is not always straightforward, as the micron coordinate system may be offset from the 0,0 mark of the pixel coordinate system. To simply analysis, this repo allows users to crop large images from the command line using the micron-based coordinate system.
 
 <p align="center">
   <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/Image.jpg" width="400" height="400" />
