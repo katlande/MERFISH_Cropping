@@ -12,7 +12,6 @@ Full, high-resolution tissue images from MERFISH experiments can be many gb in s
 * pandas
 * pyvips
 * Pillow
-* 
 ##### To also work with segmentation polygons, these additional dependencies are required:
 * geopandas
 * matplotlib
