@@ -1,0 +1,15 @@
+name: MERFISH_cropping
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - pyvips
+  - matplotlib
+  - pip
+  - pip:
+    - geopandas
+    - Pillow
+    - pyarrow
+
