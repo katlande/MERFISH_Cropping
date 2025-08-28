@@ -95,6 +95,13 @@ python show_segmentation.py \
 	-o SegImageTest.jpg # output file name
 ```
 
+
+<p align="center">
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/SegTest_noImg.jpg" width="400" height="400" />
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/SegTest_withImg.jpg" width="400" height="400" />
+</p>
+
+
 #### Optional Arguments
 
 Input options:
