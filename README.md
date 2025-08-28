@@ -7,16 +7,26 @@ Full, high-resolution tissue images from MERFISH experiments can be many gb in s
 </p>
 
 ## Setup
-The cropping script runs in python3, and requires the following dependencies:
+The cropping script runs in python3, and requires the following minimum dependencies:
 * numpy
 * pandas
 * pyvips
 * Pillow
+To also work with segmentation polygons, these additional dependencies are required:
+* geopandas
+* matplotlib
+* pyarrow
 
-A minimal conda environment for this script can be setup with:
+A minimal conda environment for cropping only can be setup with:
 ```
 conda env create --name MERFISH_IMAGES --file=environment.yml
 ```
+Or a complete conda environment that allows users to work with segmentation polygons in addition can be setup with:
+```
+conda env create --name MERFISH_IMAGES --file=environment_extended.yml
+```
+*Older machines may have trouble with the extended environment.*
+
 
 ## Cropping images
 Two input files are required for image cropping, both are found within the 'images' folder of the processed MERFISH data
