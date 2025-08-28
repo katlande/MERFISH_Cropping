@@ -63,6 +63,8 @@ While it is not necessary for the crop_image script to run, it will dramatically
 vips tiffsave mosaic_DAPI_z3.tf mosaic_DAPI_z3_pyramidal.tif --tile --pyramid --compression jpeg --Q 100
 ```
 
+
+
 # Adding Segmentation Polygons
 Segmentation polygons can also be visualized using micron-space coordinates. Users can choose to either visualize the polygons alone, or to overlay them on top of a cropped image. Two input files are required for segmentation, both are found within 'output' folder of a MERFISH run:
 * The segmentation information in parquet form (typically 'cell_boundaries.parquet')
