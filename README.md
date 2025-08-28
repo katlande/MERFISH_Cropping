@@ -7,12 +7,13 @@ Full, high-resolution tissue images from MERFISH experiments can be many gb in s
 </p>
 
 ## Setup
-The cropping script runs in python3, and requires the following minimum dependencies:
+##### The cropping script runs in python3, and requires the following minimum dependencies:
 * numpy
 * pandas
 * pyvips
 * Pillow
-To also work with segmentation polygons, these additional dependencies are required:
+* 
+##### To also work with segmentation polygons, these additional dependencies are required:
 * geopandas
 * matplotlib
 * pyarrow
