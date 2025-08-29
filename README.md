@@ -41,7 +41,7 @@ python crop_image.py \
 ```
 
 <p align="center">
-  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/example_main.jpg" width="400" height="400" />
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/example_main.jpeg" width="400" height="400" />
   <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/cropped_example.jpeg" width="400" height="400" />
 </p>
 
