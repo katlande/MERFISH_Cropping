@@ -110,7 +110,7 @@ Input options:
 * -m: If the metadata file is not called "cell_metadata.csv," pass its name with this argument
 * -k: Optional header-less .txt file containing a list of filtered cells, removes filtered polygons from the segmentation image
 
-Image transformations, all are FALSE by default and should only be relevant if the image has been previously modified in some way:
+Image transformations, all are FALSE by default, but may be relevant if the image has been modified in some way. Often images are mirror-flipped relative to polygons, as in the example above, in which case a transformation argument would be necessary for overlaying:
 * -a: Integer, angle at which to rotate the polygons
 * -x: Boolean, whether or not to mirror-flip the coordinates of the x axis for the polygons only
 * -y: Boolean, whether or not to mirrorflip the coordinates of the y axis for the polygons only
