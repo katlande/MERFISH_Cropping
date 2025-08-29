@@ -10,7 +10,7 @@ from PIL import Image
 import argparse
 import sys
 warnings.simplefilter('ignore', Image.DecompressionBombWarning)
-Image.MAX_IMAGE_PIXELS = 5_000_000_000 # set max image size
+Image.MAX_IMAGE_PIXELS = 5_000_000_000_000 # set max image size
 
 def main(argv):
     parser = argparse.ArgumentParser(description="Plotting segmentation polygons in a region, optionally overlaying them on top of a cropped image.")
