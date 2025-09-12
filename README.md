@@ -7,7 +7,7 @@ Full, high-resolution tissue images from MERFISH experiments can be many gb in s
 * pandas
 * pyvips
 * Pillow
-##### To also work with segmentation polygons, these additional dependencies are required:
+##### To also work with segmentation polygons and molecules, these additional dependencies are required:
 * geopandas
 * matplotlib
 * pyarrow
@@ -16,7 +16,7 @@ A minimal conda environment for cropping only can be setup with:
 ```
 conda env create --name MERFISH_IMAGES --file=environment.yml
 ```
-Or a complete conda environment that allows users to work with segmentation polygons in addition can be setup with:
+Or a complete conda environment that allows users to run all scripts can be setup with:
 ```
 conda env create --name MERFISH_IMAGES --file=environment_extended.yml
 ```
