@@ -33,3 +33,23 @@ We recieve the following overlay:
 
 <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/SegTest_withImg.jpg" alt="Main Image" width="400" height="400">
 
+
+## Molecule Overlays
+
+We can also overlay any image or polygon plot with a molecule scatter plot. This is how we would overlay a single gene's transcripts:
+```
+python Add_Molecules.py -i test/SegTest_noImg.jpg -d test/example_transcripts.csv -m "Pdcd1" -l 1500 -r 3500 -t 12000 -b 10000 -o test/TestMols.jpg --ptsize 2 --ptalpha 1
+```
+We recieve the following:
+
+<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols.jpg" alt="Main Image" width="400" height="400">
+
+
+We can also use a set of genes by supplying them in a text file:
+```
+python Add_Molecules.py -i test/SegTest_noImg.jpg -d test/example_transcripts.csv -m test/example_molecules.txt -l 1500 -r 3500 -t 12000 -b 10000 -o test/TestMols_file.jpg --ptsize 2 --ptalpha 1
+```
+We recieve the following:
+
+<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols_file.jpg" alt="Main Image" width="400" height="400">
+
