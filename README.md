@@ -186,9 +186,9 @@ Output options:
 
 # Finding the Correct Orientation
 * The microscopy images and data information (cell polygons, transcript locations), typically cannot be directly overlaid, and need to be transformed. 
-⋅⋅⋅⋅* While this transformation may change between institutions or runs, I find that generally speaking, the data is flipped along the y-axis relative to microscopy images. Setting the -y option to True when overlaying polygons or molecules on top of microscopy images
-⋅⋅⋅⋅* Polygons and molecules will always be in the same orientation unless one file has been externally modified. When overlaying only polygons and molecules in absence of a microscopy image, either apply NO image transformation options, or apply the same image transformation options to generate images.
-⋅⋅⋅⋅* When overlaying molecules on a DAPI image already overlaid with polygons, apply the same transformation was was used for show_segmentation.py
+⋅⋅⋅ * While this transformation may change between institutions or runs, I find that generally speaking, the data is flipped along the y-axis relative to microscopy images. Setting the -y option to True when overlaying polygons or molecules on top of microscopy images.⋅⋅
+⋅⋅⋅ * Polygons and molecules will always be in the same orientation unless one file has been externally modified. When overlaying only polygons and molecules in absence of a microscopy image, either apply NO image transformation options, or apply the same image transformation options to generate images.⋅⋅
+⋅⋅⋅ * When overlaying molecules on a DAPI image already overlaid with polygons, apply the same transformation was was used for show_segmentation.py⋅⋅
 
 * Sanity checking: if you are unsure what transformations to apply, identify an area with a distinct shape (e.g., along a tissue edge), and play around with polygon overlays using various transformation options until you find one that matches perfectly. 
 
