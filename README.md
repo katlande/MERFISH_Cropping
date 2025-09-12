@@ -163,8 +163,8 @@ python Add_Molecules.py \
 
 
 <p align="center">
-  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols.jpg" width="400" height="400" />
-  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols_file.jpg" width="400" height="400" />
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols.jpg" height="400" />
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols_file.jpg" height="400" />
 </p>
 
 
