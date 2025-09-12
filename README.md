@@ -122,3 +122,64 @@ Output options:
 * -w: linewidth of segmentation polygons
 
 
+
+# Overlaying Transcripts
+We can also overlay detected transcripts directly on top of microscopy or polygon images. Users have a choice to plot all transcripts (default), a single gene's transcripts, or the transcripts from a set of genes supplied as a plain text file.
+
+Two input files are required for overlaying molecules:
+* An image to overlay the molecules on (the output of show_segmentation.py or crop_image.py)
+* The detected_transcripts.csv file found within 'output' folder of a MERFISH run
+
+
+A minimal run example using one gene, on top of our polygon image (this would would work the same way with the DAPI image, as long as the image is properly transformed with '-y True').
+```
+python Add_Molecules.py \
+	-i SegTest_noImg.jpg \ # our overlay background image
+	-d detected_transcripts.csv \
+	-m "Pdcd1" \ # our gene of interest
+	-l 1500 \ # xmin, same as SegTest_noImg.jpg
+	-r 3500 \ # xmax, same as SegTest_noImg.jpg
+	-t 12000 \ # ymax, same as SegTest_noImg.jpg
+	-b 10000 \ # ymin, same as SegTest_noImg.jpg
+	-o TestMols.jpg \ # output file name
+	--ptsize 2 \ # size of individual dots
+	--ptalpha 1 \ alpha value for individual dots
+```
+
+To plot multiple genes, the -m option needs to be set to a headerless plain text file containing a new-line separated list of gene names:
+```
+python Add_Molecules.py \
+	-i SegTest_noImg.jpg \ # our overlay background image
+	-d detected_transcripts.csv \
+	-m example_molecules.txt \ # example in test folder
+	-l 1500 \ # xmin, same as SegTest_noImg.jpg
+	-r 3500 \ # xmax, same as SegTest_noImg.jpg
+	-t 12000 \ # ymax, same as SegTest_noImg.jpg
+	-b 10000 \ # ymin, same as SegTest_noImg.jpg
+	-o TestMols_file.jpg \ # output file name
+	--ptsize 2 \ # size of individual dots
+	--ptalpha 1 \ alpha value for individual dots
+```
+
+
+<p align="center">
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols.jpg" width="400" height="400" />
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/TestMols_file.jpg" width="400" height="400" />
+</p>
+
+
+#### Optional Arguments
+
+Image transformations, all are FALSE by default, but may be relevant if the image has been modified in some way. Often microscopy images are mirror-flipped relative to data files, in which case a transformation argument would be necessary for overlaying:
+* -a: Integer, angle at which to rotate the polygons
+* -x: Boolean, whether or not to mirror-flip the coordinates of the x axis for the polygons only
+* -y: Boolean, whether or not to mirrorflip the coordinates of the y axis for the polygons only
+
+Output options:
+* -q: Image quality in dpi
+* --ptcol: Line colour of dots, only if plotting all transcripts or a single transcript
+* --ptsize: Point size
+* --ptalpha: Point alpha value (0-1)
+* --allmolecules: Boolean, whether or include all detected molecules (True) or only molecules inside cells (False)
+
+
