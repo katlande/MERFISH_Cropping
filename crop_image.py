@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # imports:
 import sys, getopt
 import pandas as pd
@@ -8,7 +9,7 @@ import argparse
 warnings.simplefilter('ignore', Image.DecompressionBombWarning)
 
 # set max image size:
-Image.MAX_IMAGE_PIXELS = 5_000_000_000_000 
+Image.MAX_IMAGE_PIXELS = 5_000_000_000 
 
 def str2bool(v):
   return v.lower() in ("yes", "true", "t", "1")

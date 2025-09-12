@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # show segmentation in a region:
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -10,7 +11,7 @@ from PIL import Image
 import argparse
 import sys
 warnings.simplefilter('ignore', Image.DecompressionBombWarning)
-Image.MAX_IMAGE_PIXELS = 5_000_000_000_000 # set max image size
+Image.MAX_IMAGE_PIXELS = 5_000_000_000 # set max image size
 
 def main(argv):
     parser = argparse.ArgumentParser(description="Plotting segmentation polygons in a region, optionally overlaying them on top of a cropped image.")
@@ -103,6 +104,8 @@ def main(argv):
     print("Creating final plot...")
     gdf.plot(ax=ax, edgecolor=polygon_color, facecolor=face_col, lw=polygon_lw)
     ax.set_axis_off()
+    ax.set_xlim(xmin, xmax)
+    ax.set_ylim(ymin, ymax)
     
     print("Saving output image...")
     plt.savefig(outputfile, dpi=outputdpi, bbox_inches="tight", pad_inches=0)
