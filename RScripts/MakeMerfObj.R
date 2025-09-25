@@ -49,4 +49,5 @@ MakeMerfObj <- function(dir, sample, ncores=12, transcripts=NULL, verbose.seurat
 # transcripts: transcript file to use if not simply "detected_transcripts.csv" in dir, otherwise NULL 
 # verbose.seurat: whether or not to show the verbose output for internal seurat functions
 
-# This function will create a working seurat object containing polygon segmentation, centroids in the meta data, and ALL molecules in the images slot.
+# This function will create a working seurat object containing polygon segmentation, centroids in the meta data, and ALL molecules in the images slot. Reads will be return SCT normalized as well as log Normalized.
+
