@@ -12,7 +12,7 @@ We recieve the following figures:
 
 <p align="center">
   <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/MoleculeDensityHeatmap.jpg" width="400" height="400" />
-  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/MoleculeDensityHistogram.jpgg" width="400" height="400" />
+  <img src="https://github.com/katlande/MERFISH_Cropping/blob/main/test/MoleculeDensityHistogram.jpg" width="400" height="400" />
 </p>
 
 Here we can see the relative transcript density in out test image, as well as a distribution of those densities. In real data, we expect the histogram to be more Gaussian, however in our down-sampled testing dataset the distribution is quite messy.
