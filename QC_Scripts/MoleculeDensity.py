@@ -109,7 +109,7 @@ def main(argv):
     ax.set_aspect("equal")
     sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
     sm.set_array([])
-    cbar = plt.colorbar(sm, ax=ax)
+    cbar = plt.colorbar(sm, ax=ax, shrink=0.5)
     cbar.set_label("Molecules/uM^2")
     plt.savefig("MoleculeDensityHeatmap.jpg", dpi=200, bbox_inches="tight", pad_inches=0)
     
