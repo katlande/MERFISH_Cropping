@@ -1,3 +1,11 @@
+library(SeuratObject)
+library(Seurat)
+library(dplyr)
+library(BiocParallel)
+library(sf)
+library(magrittr)
+# This function was designed for use with Seurat v5.0.1.9001 in R v4.4.3
+
 MakeMerfObj <- function(dir, sample, ncores=12, transcripts=NULL, verbose.seurat=F){
   
   message("Creating polygon object...")
