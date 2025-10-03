@@ -192,7 +192,7 @@ Output options:
 
 * Sanity checking: if you are unsure what transformations to apply, identify an area with a distinct shape (e.g., along a tissue edge), and play around with polygon overlays using various transformation options until you find one that matches perfectly. 
 
-* The x & y coordinates in Seurat object metadata are the same as those used for image boundary l/r & b/t values. However, note that Seurat's ImageDimPlot() swaps the x & y coordinates for plotting. Hence, any "x" and "y" values supplied to the Crop() function will actually by the b/t and l/r limits, respectively.
+* The x & y coordinates in Seurat object metadata are the same as those used for image boundary l/r & b/t values. However, note that Seurat's ImageDimPlot() swaps the x & y coordinates for plotting. Hence, any "x" and "y" values supplied to the Crop() function will actually be the b/t and l/r limits, respectively.
 
 
 
