@@ -5,6 +5,7 @@ library(BiocParallel)
 library(sf)
 library(magrittr)
 # This function was designed for use with Seurat v5.0.1.9001 in R v4.4.3
+# NOTE: if sample has an underscore in the name, it will cause downstream errors.
 
 MakeMerfObj <- function(dir, sample, ncores=12, transcripts=NULL, verbose.seurat=F){
   
