@@ -61,7 +61,7 @@ Output options:
 While it is not necessary for the crop_image script to run, it will dramatically increase the cropping speed if the output mosaic files are converted into pyramidal images. A .tif can be converted to pyramidal format on commandline with vips:
 
 ```
-vips tiffsave mosaic_DAPI_z3.tf mosaic_DAPI_z3_pyramidal.tif --tile --pyramid --compression jpeg --Q 100
+vips tiffsave mosaic_DAPI_z3.tif mosaic_DAPI_z3_pyramidal.tif --tile --pyramid --compression jpeg --Q 100
 ```
 
 
