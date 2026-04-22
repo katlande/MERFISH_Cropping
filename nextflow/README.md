@@ -4,13 +4,15 @@ nextflow run main.nf \
 --outputPath /path/to/output/folder \
 --image /path/to/images/mosaic_DAPI_z3.tif \
 --convFile /path/to/images/micron_to_mosaic_pixel_transform.csv \
---condaEnv /path/to/miniconda3/envs/MFcropping
+--condaEnv /path/to/miniconda3/envs/MFcropping \
+--areaSize 500
 
 * inputPath: dir containing: detected_transcripts.csv, cell_boundaries.parquet, cell_metadata.csv
 * outputPath: dir for output files
 * image: image to crop
 * convFile: micron_to_mosaic_pixel_transform.csv for image
 * condaEnv: path to MFcropping environment, if not specified loads from yaml
+* areaSize: diameter of cropped area in uM, default=500
 
 # Workflow steps:
 * MoleculeDensity.py, then rank the area sizes by density and choose a high density area to plot boundaries for each area
