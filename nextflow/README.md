@@ -4,7 +4,7 @@ nextflow run main.nf \
 --outputPath /path/to/output/folder \
 --image /path/to/images/mosaic_DAPI_z3.tif \
 --convFile /path/to/images/micron_to_mosaic_pixel_transform.csv \
---condaEnv /path/to/miniconda3/envs/MFcropping # optional -- path to premade conda env from yaml, may fail if not pre-run
+--condaEnv /path/to/miniconda3/envs/MFcropping
 
 * inputPath: dir containing: detected_transcripts.csv, cell_boundaries.parquet, cell_metadata.csv
 * outputPath: dir for output files
