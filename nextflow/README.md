@@ -3,16 +3,16 @@ Simple nextflow pipeline to automate MERFISH QC for one sample,
 # Outputs:
 ### (1) Probe Density Information
 * MoleculeDensityHeatmap.jpg - mean probes/uM across tissue image in rasters
-<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/MoleculeDensityHeatmap.jpg" alt="Main Image" width="400" height="400">
+<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/MoleculeDensityHeatmap.jpg" alt="Main Image" width="300" height="300">
 
 * MoleculeDensityHistogram.jpg - density plot of mean probes/uM in all rasters in image
-<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/MoleculeDensityHistogram.jpg" alt="Main Image" width="400" height="400">
+<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/MoleculeDensityHistogram.jpg" alt="Main Image" width="300" height="300">
 
 * MoleculeDensity.csv - molecule density information in plaintext
 
 ### (2) Example Tissue Image
 * CroppedImage.jpg - a quadrant from a good quality area estimated by probe density to QC tissue makeup. 
-<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/web_assets/CroppedImage.jpg" alt="Main Image" width="400" height="400">
+<img src="https://github.com/katlande/MERFISH_Cropping/blob/main/web_assets/CroppedImage.jpg" alt="Main Image" width="400" height="400">
 
 ### (3) Segmentation Overlay
 * PolygonOverlay.jpg - CroppedImage.jpg overlaid with segmentation polygons to QC segmentation accuracy. 
